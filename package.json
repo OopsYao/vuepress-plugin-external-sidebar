@@ -1,0 +1,8 @@
+{
+  "name": "@oopsy/vuepress-plugin-external-sidebar",
+  "version": "1.0.1",
+  "main": "index.js",
+  "author": "oopsy",
+  "license": "MIT",
+  "private": false
+}
