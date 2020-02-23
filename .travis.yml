@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '12.13'
+deploy:
+  provider: npm
+  email: whoops.yao@gmail.com
+  api_key:
+    secure: kb3NZYc5QmU0MRaCnaP/tLNCHKIzYL4JC1RdKum84+uy7dtua2cYCjermrJck/xgcaDvPSwPM+sdiWSqbnyJyn7jF1nE8PB+pIqynpbRBASqTtwc0RXyngcpVxLCt/bZu7Ezd5HkAM6kAhC2+BNGPU+0jV3JVPYy98PtRLYsJuNnk7jv/xZ/HSPU/uivH07RjekP2jVcelhUlbDbKzJ8o3ufensDAPVyxcWOjiAuKwgrhwnCxoS8q5+Y0qQXS+5BoaHD2tuFWnFKt23nFa5JYGpEhfkqmMqeydHGyvodl5cPoO8qUJlUT1txKcZnapMYKn5ji4C0ATkZ8FHXacJC/x+Y/Vth3N/oG94ZtVBNeQ7v4LX6Nmp2bVP0ayy8WL6zKg9rI5Qf7peFSLoXj6oiin85ScU1higsKJ4BbcLqOSMEWJJaEy+PR1+nhzG070MhvjGzAHllTyi3OE3mXRFJmjECAOBp2wujO+TdIqJYaii3dvxRHfriqetv8/bXlTM2Xn/DqaUrRKnx2TzC7uKBpaaCRBPxwxn49WSiaZj64vA+aB/zFwmZVf59KhJ6tJE4DTNraQuP8xHqb21A4dPLRqrNhMTB5a2L+B1AWpKZRLNJ1sHF5RQuc8JEOaRM5Rh6LAikoa3+1Au11744D9MTwqbK1NCBRxGR6lfLKno1X6Q=
+  on:
+    tags: true
+    repo: OopsYao/vuepress-plugin-external-sidebar

@@ -1,6 +1,6 @@
 {
   "name": "@oopsy/vuepress-plugin-external-sidebar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vuepress plugin to enable separate sidebar config files",
   "keywords": [
     "vuepress",
@@ -11,5 +11,8 @@
   "main": "index.js",
   "author": "oopsy",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
 }
