@@ -1,5 +1,7 @@
 const fs = require('fs');
 const { resolve, dirname } = require('path');
+// Scan the source directory for `toc.js` to
+// generate `sidebar` obj
 const sidebar = function (srcDir) {
     let sidebar = {};
 
@@ -27,6 +29,8 @@ module.exports = (_, ctx) => ({
         }
     },
     enhanceAppFiles: resolve(__dirname, 'enhanceAppFiles.js'),
+    // Since `sidebar` is generated during building time,
+    // and we need to inject it during runtime.
     clientDynamicModules() {
         return {
             name: 'constants.js',
