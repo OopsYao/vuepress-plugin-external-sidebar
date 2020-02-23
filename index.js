@@ -19,6 +19,9 @@ const sidebar = function (srcDir) {
 module.exports = (_, ctx) => ({
     extendPageData($page) {
         const { _filePath, frontmatter } = $page;
+        // Seems like this function will be excuted twice in prod mode,
+        // one for .md one for .html rednering
+        if (_filePath === undefined) return;
         if (!fs.existsSync(resolve(dirname(_filePath), 'toc.js'))) {
             frontmatter.sidebar = 'auto';
         }
